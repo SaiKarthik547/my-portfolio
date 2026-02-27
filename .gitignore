@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 .orchids
+debug.log
+
 
 # Editor directories and files
 .vscode/*
