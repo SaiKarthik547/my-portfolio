@@ -72,28 +72,28 @@ export const portfolioData = {
     ],
     projects: [
       {
-        title: "Medical Consultation Platform",
+        title: "Capstone – Medical AI Brain Analysis System",
         description:
-          "A secure full-stack platform enabling structured doctor–patient consultations with role-based access, authentication, and medical data handling.",
+          "Deep learning based medical imaging system for analyzing brain MRI scans and performing disease segmentation.",
+        technologies: ["Python", "PyTorch", "NumPy", "Medical Imaging"],
+      },
+      {
+        title: "Medical Consultation System",
+        description:
+          "A full-stack healthcare platform enabling doctor and patient interactions through structured consultation workflows.",
         technologies: ["Next.js", "TypeScript", "Prisma", "SQLite"],
       },
       {
-        title: "LocalAI – Modular AI Assistant",
+        title: "EcoForge – AI Agents for Carbon Footprint Analysis",
         description:
-          "An internet-connected AI assistant with offline fallback using local models, RAG memory, and multimodal generation capabilities.",
-        technologies: ["Python", "Flask", "Transformers", "RAG", "SQLite"],
+          "AI powered multi agent system designed to estimate carbon footprint based on lifestyle activities.",
+        technologies: ["Python", "AI Agents", "Streamlit", "LLMs"],
       },
       {
-        title: "Medical AI for Brain Disease Analysis",
+        title: "Local Modular AI",
         description:
-          "Deep learning system for brain disease segmentation, localization, and 3D mesh visualization using custom encoder-decoder architecture.",
-        technologies: ["Python", "PyTorch", "Medical Imaging"],
-      },
-      {
-        title: "AI Website Generator",
-        description:
-          "AI tool that generates complete websites from natural language prompts with planning, generation, and iterative chat improvements.",
-        technologies: ["FastAPI", "React", "TypeScript"],
+          "Modular AI assistant framework designed to run locally with support for LLM based reasoning and modular task execution.",
+        technologies: ["Python", "Transformers", "LLMs"],
       },
     ],
   },
@@ -184,100 +184,100 @@ export const portfolioData = {
 
   portfolio: [
     {
-      title: "Leo - Personal AI Assistant",
-      description: "Leo is a smart personal AI assistant built with React, TypeScript, and Tailwind CSS, featuring API key integration for advanced conversational and productivity features.",
-      image: "https://ik.imagekit.io/e08wbj78c/leo%20ai.png?updatedAt=1753704439802",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "API Integration"],
-      githubUrl: "https://github.com/SaiKarthik547/leo-ai-assistant",
+      id: "capstone",
+      title: "Capstone – Medical AI Brain Analysis System",
+      description: "Deep learning based medical imaging system for analyzing brain MRI scans and performing disease segmentation.",
+      technologies: ["Python", "PyTorch", "NumPy", "Medical Imaging"],
+      githubUrl: "https://github.com/SaiKarthik547/Capstone",
+      status: "featured",
+    },
+    {
+      id: "medical-consultation-system",
+      title: "Medical Consultation System",
+      description: "A full-stack healthcare platform enabling doctor and patient interactions through structured consultation workflows.",
+      technologies: ["Next.js", "TypeScript", "Prisma", "SQLite"],
+      githubUrl: "https://github.com/SaiKarthik547/Medical-Consultation-SYstem",
+      status: "featured",
+    },
+    {
+      id: "eco-forge",
+      title: "EcoForge – AI Agents for Carbon Footprint Analysis",
+      description: "AI powered multi agent system designed to estimate carbon footprint based on lifestyle activities.",
+      technologies: ["Python", "AI Agents", "Streamlit", "LLMs"],
+      githubUrl: "https://github.com/SaiKarthik547/EcoForge---AI-Agents-for-Carbon-Footprint-Analysis",
+      status: "featured",
+    },
+    {
+      id: "multimodal-sentiment-analysis",
+      title: "Multimodal Sentiment Analysis",
+      description: "Machine learning system performing sentiment analysis using multiple modalities including text and visual features.",
+      technologies: ["Python", "PyTorch", "Machine Learning"],
+      githubUrl: "https://github.com/SaiKarthik547/Multimodal-sentimental-analysis",
       status: "completed",
     },
     {
-      title: "LocalAI – Internet Connected AI Assistant",
-      description:
-        "A modular AI assistant capable of real-time internet search, offline local model fallback, RAG memory, and multimodal generation.",
-      technologies: ["Python", "Flask", "Transformers", "RAG"],
-      githubUrl: "https://github.com/SaiKarthik547",
-      status: "featured",
-    },
-    {
-      title: "Medical AI – Brain Disease Segmentation & 3D Visualization",
-      description:
-        "Custom deep learning model for brain disease segmentation with accurate localization and 3D mesh visualization.",
-      technologies: ["PyTorch", "Medical Imaging", "3D Visualization"],
-      githubUrl: "https://github.com/SaiKarthik547",
-      status: "featured",
-    },
-    {
-      title: "Medical Consultation Platform",
-      description:
-        "Full-stack role-based medical consultation system managing doctor–patient workflows, authentication, and medical records.",
-      technologies: ["Next.js", "TypeScript", "Prisma", "SQLite"],
-      githubUrl: "https://github.com/SaiKarthik547",
-      status: "featured",
-    },
-    {
-      title: "AI Website Generator",
-      description:
-        "AI tool that generates complete multi-page websites from plain English prompts with planning and chat refinement.",
-      technologies: ["FastAPI", "React", "TypeScript"],
-      githubUrl: "https://github.com/SaiKarthik547",
-      status: "featured",
-    },
-    {
+      id: "beacon-analytics",
       title: "Beacon – Student Performance Analytics Platform",
-      description:
-        "An analytics platform for educational institutions to track student performance, identify risks, and provide actionable insights.",
-      technologies: ["FastAPI", "React", "TypeScript", "Supabase"],
-      githubUrl: "https://github.com/SaiKarthik547",
-      status: "live"
+      description: "Data analytics platform designed to analyze academic datasets and generate insights about student performance trends.",
+      technologies: ["Python", "FastAPI", "React", "Data Analytics"],
+      githubUrl: "https://github.com/SaiKarthik547/Beacon-Student-Performance-Analytics-Platform",
+      status: "live",
     },
     {
-      title: "Task Management System (Role-Based Project Tracker)",
-      description:
-        "A full-stack task management platform with multi-role access, task lifecycle tracking, and REST APIs.",
-      technologies: ["React", "TypeScript", "Express", "MySQL"],
-      githubUrl: "https://github.com/SaiKarthik547",
-      status: "live"
+      id: "local-modular-ai",
+      title: "Local Modular AI",
+      description: "Modular AI assistant framework designed to run locally with support for LLM based reasoning and modular task execution.",
+      technologies: ["Python", "Transformers", "LLMs"],
+      githubUrl: "https://github.com/SaiKarthik547/Local-Modular-AI",
+      status: "featured",
     },
     {
-      title: "EcoForge – AI Agents for Carbon Footprint Analysis",
-      description:
-        "Multi-agent AI system analyzing lifestyle data to estimate carbon footprint and provide sustainability recommendations.",
-      technologies: ["Python", "Streamlit", "LangChain", "SQLite"],
-      githubUrl: "https://github.com/SaiKarthik547",
-      status: "live"
+      id: "leo-ai-assistant",
+      title: "Leo AI Assistant",
+      description: "Personal AI assistant designed to explore conversational AI capabilities and task automation.",
+      technologies: ["Python", "LLMs"],
+      githubUrl: "https://github.com/SaiKarthik547/Leo-AI-Assist",
+      status: "completed",
     },
     {
-      title: "AI Agents & Multi-Agent Workflow Systems",
-      description:
-        "Collection of AI systems built using multiple cooperating agents with task orchestration and output validation.",
-      technologies: ["Python", "LLMs", "Agent Frameworks"],
-      githubUrl: "https://github.com/SaiKarthik547",
-      status: "live"
+      id: "jarvis-ai",
+      title: "JARVIS AI Assistant",
+      description: "Experimental conversational AI assistant inspired by JARVIS capable of voice interaction and automation tasks.",
+      technologies: ["Python", "LLMs", "Voice AI"],
+      githubUrl: "https://github.com/SaiKarthik547/J.A.R.V.I.S-AI-Assistant",
+      status: "completed",
     },
     {
-      title: "Multimodal Sentiment Analysis System",
-      description:
-        "Machine learning system performing sentiment analysis using both textual and visual inputs with pretrained models.",
-      technologies: ["Python", "Multimodal Learning", "PyTorch"],
-      githubUrl: "https://github.com/SaiKarthik547",
-      status: "completed"
+      id: "blockchain-drug-supply-chain",
+      title: "Blockchain Based Drug Supply Chain",
+      description: "Blockchain prototype designed to track pharmaceutical supply chains and ensure tamper resistant drug distribution records.",
+      technologies: ["Blockchain", "Solidity", "Web Technologies"],
+      githubUrl: "https://github.com/SaiKarthik547/Blockchain-based-Drug-Supply-Chain",
+      status: "completed",
     },
     {
-      title: "Blockchain-Based Drug Supply Chain",
-      description:
-        "Blockchain-backed web application demonstrating transparent and tamper-resistant tracking of drug movement.",
-      technologies: ["Blockchain", "Web Technologies", "Solidity"],
-      githubUrl: "https://github.com/SaiKarthik547",
-      status: "completed"
-    },
-    {
-      title: "Fiery Flappy Bird – Web Game",
-      description:
-        "Experimental browser game implementing custom game mechanics, scoring logic, and interactive UI.",
+      id: "student-expense-tracker",
+      title: "Student Expense Tracker",
+      description: "Personal finance tracking application designed to help students monitor daily spending habits.",
       technologies: ["JavaScript", "HTML", "CSS"],
-      githubUrl: "https://github.com/SaiKarthik547",
-      status: "completed"
-    }
+      githubUrl: "https://github.com/SaiKarthik547/Student-expense-tracker",
+      status: "completed",
+    },
+    {
+      id: "task-manager",
+      title: "Task Manager",
+      description: "Lightweight task management application for organizing and tracking daily activities.",
+      technologies: ["JavaScript", "HTML", "CSS"],
+      githubUrl: "https://github.com/SaiKarthik547/task-manager",
+      status: "completed",
+    },
+    {
+      id: "fiery-flappy-bird",
+      title: "Fiery Flappy Bird",
+      description: "Browser based game inspired by Flappy Bird featuring custom obstacle mechanics and score tracking.",
+      technologies: ["JavaScript", "HTML", "CSS"],
+      githubUrl: "https://github.com/SaiKarthik547/Fiery-Flappy-Bird",
+      status: "completed",
+    },
   ],
 };

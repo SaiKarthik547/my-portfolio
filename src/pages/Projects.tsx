@@ -6,6 +6,7 @@ import { portfolioData } from '../data/portfolioData';
 import { projectDetails } from '../data/projectDetails';
 
 interface Project {
+  id?: string;
   title: string;
   description: string;
   image?: string;
@@ -39,15 +40,15 @@ const Projects: React.FC = () => {
   const slugify = (text: string) => text.toLowerCase().replace(/[^\w ]+/g, '').replace(/ +/g, '-');
 
   const handleProjectClick = (project: Project) => {
-    const slug = slugify(project.title);
-    const detail = projectDetails[slug];
+    const key = project.id || slugify(project.title);
+    const detail = projectDetails[key];
     
     if (detail) {
       setSelectedProject(detail);
     } else {
       // Fallback if no detailed data exists yet
       setSelectedProject({
-        id: slug,
+        id: key,
         title: project.title,
         fullDescription: project.description,
         features: ["Coming soon: Detailed features list"],
