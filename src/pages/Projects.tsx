@@ -217,9 +217,9 @@ const Projects: React.FC = () => {
                     <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6 leading-tight">
                       {selectedProject.title}
                     </h2>
-                    <p className="text-xl text-gray-300 leading-relaxed">
-                      {selectedProject.fullDescription}
-                    </p>
+                      <p className="text-xl text-gray-300 leading-relaxed whitespace-pre-line">
+                        {selectedProject.fullDescription}
+                      </p>
                   </div>
 
                   <div className="grid md:grid-cols-2 gap-8">

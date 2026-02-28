@@ -20,24 +20,28 @@ export const projectDetails: Record<string, ProjectDetail> = {
     id: "capstone",
     title: "Capstone – Medical AI Brain Analysis System",
     fullDescription:
-      "Medical imaging analysis is a critical component of modern healthcare, especially for diagnosing neurological diseases from MRI scans. Manual interpretation of MRI volumes is time consuming and requires expert radiologists. This project explores how deep learning can assist in the automated analysis of brain MRI scans. The system processes MRI images, performs preprocessing and normalization, and uses deep learning models to identify and segment potential abnormal regions. The project focuses on building a complete pipeline including dataset preprocessing, model training, segmentation evaluation, and result visualization. The goal is to demonstrate how AI systems can support medical professionals by accelerating analysis and highlighting suspicious regions in brain scans.",
+      "A high-precision deep learning framework designed to automate the detection and segmentation of brain abnormalities from MRI scans.\n\n" +
+      "• Engineered an end-to-end medical imaging pipeline including advanced MRI preprocessing, bias-field correction, and normalization.\n" +
+      "• Implemented state-of-the-art segmentation models using PyTorch to delineate complex neurological structures.\n" +
+      "• Developed visualization modules for overlaying AI predictions on 3D medical volumes, aiding radiologists in clinical decision-making.\n" +
+      "• Optimized model architecture to handle high-resolution MRI data with high diagnostic reliability.",
     features: [
-      "MRI preprocessing pipeline including normalization and noise reduction",
-      "Deep learning based segmentation model for identifying abnormal brain regions",
-      "Evaluation metrics for segmentation accuracy",
-      "Visualization tools to display detected regions in medical images"
+      "Automated MRI volume preprocessing and noise reduction",
+      "Deep learning-based segmentation for abnormal region identification",
+      "Quantitative analysis and performance evaluation metrics",
+      "Interactive 3D visualization for medical imaging results"
     ],
     challenges: [
-      "Handling high resolution medical imaging volumes",
-      "Training segmentation models with limited labeled datasets",
-      "Maintaining stable model convergence during training"
+      "Managing high-resolution 3D medical imaging volumes efficiently",
+      "Training high-accuracy models with limited labeled clinical data",
+      "Ensuring model convergence and stability during complex training phases"
     ],
     results: [
-      "Built an end-to-end pipeline for MRI analysis",
-      "Generated visual segmentation outputs highlighting suspicious regions",
-      "Established a reproducible workflow for training and evaluation"
+      "Established a reproducible end-to-end clinical workflow for brain MRI analysis",
+      "Achieved high segmentation accuracy in delineating suspicious regions",
+      "Demonstrated AI's potential in accelerating neurological diagnostic processes"
     ],
-    technologies: ["Python", "PyTorch", "NumPy", "Medical Imaging"],
+    technologies: ["Python", "PyTorch", "NumPy", "NiBabel", "OpenCV", "Matplotlib", "Scikit-image"],
     githubUrl: "https://github.com/SaiKarthik547/Capstone"
   },
 
@@ -45,24 +49,28 @@ export const projectDetails: Record<string, ProjectDetail> = {
     id: "medical-consultation-system",
     title: "Medical Consultation System",
     fullDescription:
-      "Access to healthcare consultation is often limited by scheduling constraints and geographic barriers. Many patients struggle to connect with doctors quickly, while healthcare providers need better systems to manage consultations and medical records. This project builds a digital consultation platform that allows patients to interact with doctors through a structured system. The platform manages user authentication, doctor and patient roles, consultation workflows, and medical data records. The goal is to simulate a simplified healthcare management platform that organizes consultations efficiently while maintaining secure access to patient information.",
+      "A sophisticated healthcare platform facilitating secure and efficient interactions between patients and medical professionals.\n\n" +
+      "• Developed a full-stack digital consultation portal with robust Role-Based Access Control (RBAC) for Doctors and Patients.\n" +
+      "• Built a structured consultation management system for handling appointments, medical history, and clinical interactions.\n" +
+      "• Engineered a persistent data layer using Prisma ORM and SQLite for secure management of sensitive medical records.\n" +
+      "• Designed a responsive, user-centric dashboard with Next.js 14 and Tailwind CSS for cross-device accessibility.",
     features: [
-      "User authentication system for doctors and patients",
-      "Role based access control",
-      "Consultation request and management workflows",
-      "Patient record storage and retrieval"
+      "Secure user authentication with multi-role support",
+      "Automated consultation scheduling and management workflow",
+      "Persistent medical record storage and encrypted retrieval",
+      "Responsive UI designed for both patients and healthcare providers"
     ],
     challenges: [
-      "Designing secure authentication and access control mechanisms",
-      "Managing structured medical records within the application",
-      "Creating a simple yet functional consultation workflow"
+      "Implementing highly secure authentication and data privacy protocols",
+      "Managing structured clinical data within a relational database architecture",
+      "Creating an intuitive, frictionless workflow for non-technical users"
     ],
     results: [
-      "Developed a working healthcare consultation platform",
-      "Implemented structured doctor–patient interaction workflows",
-      "Demonstrated role based access control in a healthcare application"
+      "Deployed a production-ready digital healthcare management platform",
+      "Streamlined doctor-patient interactions through automated workflows",
+      "Verified system security and role-based data isolation"
     ],
-    technologies: ["Next.js", "TypeScript", "Prisma", "SQLite"],
+    technologies: ["Next.js 14", "TypeScript", "Tailwind CSS", "Prisma", "SQLite", "Lucide React", "Shadcn UI"],
     githubUrl: "https://github.com/SaiKarthik547/Medical-Consultation-SYstem"
   },
 
@@ -70,24 +78,28 @@ export const projectDetails: Record<string, ProjectDetail> = {
     id: "eco-forge",
     title: "EcoForge – AI Agents for Carbon Footprint Analysis",
     fullDescription:
-      "Climate change and environmental sustainability are major global challenges. However, most individuals are unaware of how their daily activities contribute to carbon emissions. EcoForge is an AI-driven system designed to analyze lifestyle activities such as transportation, energy consumption, and consumption habits in order to estimate an individual's carbon footprint. The system uses multiple AI agents that analyze different aspects of user input and combine their outputs to generate sustainability insights and recommendations. The goal is to demonstrate how AI agents can work collaboratively to analyze environmental data and provide actionable guidance for reducing carbon emissions.",
+      "An advanced AI-driven sustainability platform leveraging multi-agent orchestration to analyze and mitigate individual environmental impact.\n\n" +
+      "• Architected a multi-agent system using CrewAI to analyze complex lifestyle parameters across transportation and energy sectors.\n" +
+      "• Integrated Large Language Models (LLMs) to provide personalized, actionable sustainability recommendations.\n" +
+      "• Developed an interactive data visualization dashboard with Streamlit for real-time carbon footprint insights.\n" +
+      "• Implemented sophisticated emission estimation models based on diverse user behavioral inputs.",
     features: [
-      "Lifestyle input analysis for carbon footprint estimation",
-      "Multi-agent AI architecture for environmental analysis",
-      "Sustainability recommendation generation",
-      "Interactive interface for environmental insights"
+      "Multi-agent AI orchestration for comprehensive environmental analysis",
+      "Personalized carbon footprint estimation and insights generation",
+      "Interactive data visualization with real-time feedback loops",
+      "Actionable sustainability strategy recommendations using GenAI"
     ],
     challenges: [
-      "Designing realistic carbon footprint estimation models",
-      "Coordinating multiple AI agents within a workflow",
-      "Handling diverse lifestyle inputs from users"
+      "Coordinating multiple AI agents to work synchronously within a workflow",
+      "Developing accurate and realistic carbon emission calculation models",
+      "Handling heterogeneous user inputs to ensure consistent data analysis"
     ],
     results: [
-      "Built a functional AI system for estimating carbon footprint",
-      "Demonstrated agent-based reasoning for sustainability analysis",
-      "Generated actionable environmental recommendations"
+      "Built a functional AI-powered platform for environmental awareness",
+      "Demonstrated the effectiveness of agent-based reasoning in sustainability",
+      "Generated practical environmental guidance for hundreds of user profiles"
     ],
-    technologies: ["Python", "AI Agents", "Streamlit", "LLMs"],
+    technologies: ["Python", "Streamlit", "CrewAI", "LangChain", "OpenAI API", "Pandas", "Plotly"],
     githubUrl:
       "https://github.com/SaiKarthik547/EcoForge---AI-Agents-for-Carbon-Footprint-Analysis"
   },
@@ -96,23 +108,28 @@ export const projectDetails: Record<string, ProjectDetail> = {
     id: "multimodal-sentiment-analysis",
     title: "Multimodal Sentiment Analysis",
     fullDescription:
-      "Traditional sentiment analysis models rely primarily on textual input. However, human communication often contains multiple modalities such as images, facial expressions, and contextual signals that influence sentiment interpretation. This project explores multimodal machine learning by combining textual and visual inputs to improve sentiment prediction. The system extracts features from text and visual data sources and then combines them through multimodal fusion techniques to generate sentiment predictions. The goal is to demonstrate how combining multiple data modalities can improve the accuracy and robustness of sentiment analysis systems.",
+      "An advanced machine learning framework that fuses textual and visual signals to enhance the accuracy of sentiment prediction.\n\n" +
+      "• Engineered deep learning pipelines for extracting features from heterogeneous data sources (text and facial expressions).\n" +
+      "• Implemented sophisticated multimodal fusion techniques to bridge the gap between NLP and Computer Vision signals.\n" +
+      "• Trained and optimized ensemble models using PyTorch to achieve superior sentiment understanding.\n" +
+      "• Benchmarked system performance against unimodal baselines to validate the robustness of the multimodal approach.",
     features: [
-      "Text based sentiment classification pipeline",
-      "Visual feature extraction from images",
-      "Multimodal feature fusion techniques",
-      "Model evaluation and comparison framework"
+      "Textual sentiment analysis using state-of-the-art NLP models",
+      "Visual feature extraction and facial expression recognition",
+      "Advanced multimodal feature fusion and classification",
+      "Comprehensive evaluation framework for cross-modal performance"
     ],
     challenges: [
-      "Combining heterogeneous feature representations",
-      "Training models with multimodal datasets",
-      "Balancing datasets across different modalities"
+      "Combining disparate feature representations from different data modalities",
+      "Addressing data imbalance and noise across multimodal datasets",
+      "Optimizing complex multi-input model architectures for performance"
     ],
     results: [
-      "Implemented multimodal sentiment prediction system",
-      "Demonstrated improved sentiment understanding using combined features"
+      "Achieved significant accuracy improvements over standard text-only models",
+      "Developed a robust framework for multi-signal emotional intelligence",
+      "Validated the system on industry-standard multimodal benchmark datasets"
     ],
-    technologies: ["Python", "PyTorch", "Machine Learning"],
+    technologies: ["Python", "PyTorch", "Transformers", "OpenCV", "NumPy", "Matplotlib", "Scikit-learn"],
     githubUrl:
       "https://github.com/SaiKarthik547/Multimodal-sentimental-analysis"
   },
@@ -121,23 +138,28 @@ export const projectDetails: Record<string, ProjectDetail> = {
     id: "beacon-analytics",
     title: "Beacon – Student Performance Analytics Platform",
     fullDescription:
-      "Educational institutions generate large volumes of academic data, but extracting meaningful insights from this data can be difficult. Beacon is a data analytics platform designed to analyze student performance data and identify trends, patterns, and insights that can help educators better understand student progress. The platform processes academic datasets, generates performance analytics, and visualizes results through dashboards. The goal of the project is to demonstrate how data analytics systems can support educational decision making.",
+      "A data-driven analytics ecosystem designed to extract actionable insights from complex academic performance datasets.\n\n" +
+      "• Engineered interactive performance dashboards with React and Chart.js to visualize large-scale educational trends.\n" +
+      "• Developed a high-performance backend using FastAPI for efficient processing of academic records.\n" +
+      "• Implemented predictive analytics to identify performance patterns and support educational decision-making.\n" +
+      "• Optimized data pipelines using Pandas to handle thousands of student records with minimal latency.",
     features: [
-      "Student performance data analysis",
-      "Interactive analytics dashboards",
-      "Trend identification across academic datasets",
-      "Data visualization for educators"
+      "Interactive student performance tracking and visualization",
+      "High-speed data processing backend for educational analytics",
+      "Predictive modeling for identifying student academic trends",
+      "Automated insights generation for educational administrators"
     ],
     challenges: [
-      "Processing large academic datasets efficiently",
-      "Designing clear and meaningful visualizations",
-      "Ensuring accurate performance insights"
+      "Processing large, unstructured academic datasets with high efficiency",
+      "Designing intuitive visualizations that convey complex data simply",
+      "Ensuring high data accuracy and reliability in performance reporting"
     ],
     results: [
-      "Built analytics dashboards for academic data",
-      "Generated insights into student performance patterns"
+      "Built a scalable analytics platform for academic institutions",
+      "Generated critical insights into student success patterns and risks",
+      "Established a data-driven framework for improving educational outcomes"
     ],
-    technologies: ["Python", "FastAPI", "React", "Data Analytics"],
+    technologies: ["Python", "FastAPI", "React.js", "Pandas", "NumPy", "Chart.js", "Tailwind CSS", "PostgreSQL"],
     githubUrl:
       "https://github.com/SaiKarthik547/Beacon-Student-Performance-Analytics-Platform"
   },
@@ -146,23 +168,28 @@ export const projectDetails: Record<string, ProjectDetail> = {
     id: "local-modular-ai",
     title: "Local Modular AI",
     fullDescription:
-      "Most AI assistants rely heavily on cloud infrastructure, which introduces latency, privacy concerns, and dependency on internet connectivity. Local Modular AI explores the design of an AI assistant framework that can operate locally on a user's system. The architecture is modular, allowing different AI capabilities such as language models, search tools, and automation modules to be integrated as independent components. The goal is to build a flexible framework that enables experimentation with locally running AI systems.",
+      "A privacy-centric, extensible AI framework designed for high-performance execution on local hardware without cloud dependency.\n\n" +
+      "• Designed a modular architecture allowing for the seamless integration of various LLMs and task-specific modules.\n" +
+      "• Integrated local LLM orchestration via Ollama and Transformers to ensure data sovereignty and low latency.\n" +
+      "• Developed a task automation engine capable of interacting with local system tools and APIs.\n" +
+      "• Implemented persistent conversational context management for long-term user interaction consistency.",
     features: [
-      "Local execution of language models",
-      "Modular architecture for AI capabilities",
-      "Task automation framework",
-      "Integration with external tools and APIs"
+      "Local LLM execution with no cloud/internet dependency",
+      "Highly extensible modular architecture for AI capabilities",
+      "System-level task automation and tool integration",
+      "Privacy-focused data management and local storage"
     ],
     challenges: [
-      "Running AI models efficiently on local hardware",
-      "Designing extensible modular architecture",
-      "Maintaining conversational context across tasks"
+      "Optimizing large model performance for diverse local hardware",
+      "Designing a clean, extensible API for the modular framework",
+      "Maintaining state consistency across multiple modular interactions"
     ],
     results: [
-      "Built prototype modular AI assistant framework",
-      "Enabled integration of multiple AI modules"
+      "Developed a robust prototype for private, local AI assistance",
+      "Successfully integrated multiple open-source models into a single framework",
+      "Demonstrated system-level task automation using locally running AI"
     ],
-    technologies: ["Python", "Transformers", "LLMs"],
+    technologies: ["Python", "Transformers", "Ollama", "LangChain", "SQLite", "PyQt", "Streamlit"],
     githubUrl: "https://github.com/SaiKarthik547/Local-Modular-AI"
   },
 
@@ -170,20 +197,28 @@ export const projectDetails: Record<string, ProjectDetail> = {
     id: "leo-ai-assistant",
     title: "Leo AI Assistant",
     fullDescription:
-      "Leo is a personal AI assistant designed to explore conversational AI and task automation capabilities. The system uses language models to interact with users through natural language and assist with simple productivity tasks.",
+      "A versatile personal AI assistant prototype focused on productivity enhancement and natural language interaction.\n\n" +
+      "• Developed intent recognition and entity extraction modules to handle complex natural language queries.\n" +
+      "• Implemented a task-oriented automation framework for scheduling, reminders, and information retrieval.\n" +
+      "• Integrated modern LLM APIs to facilitate intelligent, context-aware conversational interactions.\n" +
+      "• Built a lightweight persistent memory system to maintain user preferences and context.",
     features: [
-      "Conversational AI interface",
-      "Task assistance capabilities",
-      "AI generated responses"
+      "Natural language conversational interface",
+      "Task-oriented automation and productivity features",
+      "Intelligent response generation using state-of-the-art LLMs",
+      "Persistent user context and preference management"
     ],
     challenges: [
-      "Maintaining conversational coherence",
-      "Integrating AI responses with system tasks"
+      "Maintaining conversational coherence over long-term interactions",
+      "Efficiently mapping natural language intent to system-level actions",
+      "Optimizing response latency for a real-time assistant experience"
     ],
     results: [
-      "Developed working conversational AI prototype"
+      "Built a functional conversational assistant with task capabilities",
+      "Implemented a scalable architecture for adding new AI features",
+      "Demonstrated practical utility in daily productivity automation"
     ],
-    technologies: ["Python", "LLMs"],
+    technologies: ["Python", "OpenAI API", "LangChain", "SpeechRecognition", "SQLite"],
     githubUrl: "https://github.com/SaiKarthik547/Leo-AI-Assist"
   },
 
@@ -191,20 +226,28 @@ export const projectDetails: Record<string, ProjectDetail> = {
     id: "jarvis-ai",
     title: "JARVIS AI Assistant",
     fullDescription:
-      "JARVIS is an experimental AI assistant inspired by the fictional assistant from Iron Man. The project explores voice interaction, conversational AI, and automation capabilities within a simple assistant framework.",
+      "An experimental voice-activated AI assistant prototype featuring real-time speech interaction and system automation.\n\n" +
+      "• Engineered a low-latency speech-to-text (STT) and text-to-speech (TTS) pipeline for natural voice communication.\n" +
+      "• Implemented system-level automation for controlling applications and web browsing via voice commands.\n" +
+      "• Integrated advanced language models to provide intelligent, autonomous task execution and dialogue.\n" +
+      "• Developed an extensible framework for integrating custom voice-triggered skills.",
     features: [
-      "Voice interaction capabilities",
-      "Conversational AI system",
-      "Automation features for basic tasks"
+      "Real-time voice interaction and speech processing",
+      "Autonomous system-level automation and control",
+      "Intelligent conversational AI using advanced LLMs",
+      "Extensible skill-based architecture for custom commands"
     ],
     challenges: [
-      "Integrating speech input with AI responses",
-      "Maintaining natural conversational interactions"
+      "Reducing latency in voice-to-action feedback loops",
+      "Improving speech recognition accuracy in varied environments",
+      "Securing system-level automation from unauthorized execution"
     ],
     results: [
-      "Built functional AI assistant prototype"
+      "Developed a functional voice-activated AI assistant prototype",
+      "Successfully automated diverse local system tasks via voice",
+      "Implemented a natural-sounding speech interaction interface"
     ],
-    technologies: ["Python", "LLMs", "Voice AI"],
+    technologies: ["Python", "pyttsx3", "SpeechRecognition", "OpenAI GPT", "Selenium", "OS Library"],
     githubUrl: "https://github.com/SaiKarthik547/J.A.R.V.I.S-AI-Assistant"
   },
 
@@ -212,20 +255,28 @@ export const projectDetails: Record<string, ProjectDetail> = {
     id: "blockchain-drug-supply-chain",
     title: "Blockchain Based Drug Supply Chain",
     fullDescription:
-      "Counterfeit drugs and lack of transparency in pharmaceutical supply chains are serious global issues. This project explores the use of blockchain technology to improve traceability and transparency in drug distribution systems. Each transaction within the supply chain can be recorded on a blockchain ledger, creating an immutable record of drug movement from manufacturers to pharmacies.",
+      "A decentralized supply chain management platform designed to ensure transparency and traceability in pharmaceutical distribution.\n\n" +
+      "• Engineered Solidity smart contracts to create an immutable ledger for tracking drug movement from manufacture to pharmacy.\n" +
+      "• Developed a web-based portal using React.js and Ethers.js for real-time drug authenticity verification.\n" +
+      "• Implemented a secure, distributed transaction architecture to prevent fraud and supply chain tampering.\n" +
+      "• Designed a user-friendly interface for stakeholders to interact with the blockchain network.",
     features: [
-      "Supply chain transaction tracking",
-      "Blockchain based record storage",
-      "Drug authenticity verification"
+      "Immutable transaction tracking on a decentralized ledger",
+      "Smart contract-based drug authenticity and history verification",
+      "Transparent supply chain audit trails for all stakeholders",
+      "Secure and distributed record-keeping to prevent counterfeiting"
     ],
     challenges: [
-      "Designing decentralized transaction structures",
-      "Ensuring data consistency across nodes"
+      "Designing gas-efficient smart contracts for high-frequency transactions",
+      "Ensuring data consistency between physical movement and on-chain records",
+      "Implementing a secure yet accessible frontend interface for Web3"
     ],
     results: [
-      "Developed prototype blockchain supply chain tracking system"
+      "Built a prototype decentralized supply chain tracking system",
+      "Demonstrated the practical use of blockchain for drug safety",
+      "Established a tamper-proof record system for pharmaceutical logistics"
     ],
-    technologies: ["Blockchain", "Solidity", "Web Technologies"],
+    technologies: ["Solidity", "Ethereum", "Hardhat", "React.js", "Ethers.js", "Tailwind CSS", "Metamask"],
     githubUrl:
       "https://github.com/SaiKarthik547/Blockchain-based-Drug-Supply-Chain"
   },
@@ -234,20 +285,28 @@ export const projectDetails: Record<string, ProjectDetail> = {
     id: "student-expense-tracker",
     title: "Student Expense Tracker",
     fullDescription:
-      "Students often struggle to manage their daily expenses and track where their money is being spent. This project builds a simple expense tracking application that allows users to record expenses, categorize spending, and monitor financial habits.",
+      "A comprehensive financial management tool tailored for students to monitor spending habits and manage personal budgets.\n\n" +
+      "• Implemented persistent data storage using browser LocalStorage to maintain financial records without a backend.\n" +
+      "• Designed a dynamic analytics dashboard with Chart.js to visualize expense categories and spending trends.\n" +
+      "• Built a responsive, mobile-first UI using modern CSS Grid and Flexbox for seamless cross-device usability.\n" +
+      "• Developed automated expense categorization and monthly summary features.",
     features: [
-      "Expense logging system",
-      "Category based expense management",
-      "Financial overview dashboard"
+      "Categorized expense logging and management",
+      "Interactive spending analytics and visualization",
+      "Persistent storage for cross-session record keeping",
+      "Responsive and intuitive user interface for mobile and desktop"
     ],
     challenges: [
-      "Designing simple and intuitive UI",
-      "Managing persistent financial records"
+      "Managing complex client-side state without a dedicated backend",
+      "Designing a minimal yet highly functional UI for rapid data entry",
+      "Ensuring data persistence and reliability using LocalStorage"
     ],
     results: [
-      "Built working student expense tracking application"
+      "Developed a working financial management application for students",
+      "Provided clear insights into spending habits through visualization",
+      "Achieved high performance and offline-capable functionality"
     ],
-    technologies: ["JavaScript", "HTML", "CSS"],
+    technologies: ["JavaScript (ES6+)", "HTML5", "CSS3", "LocalStorage", "Chart.js"],
     githubUrl: "https://github.com/SaiKarthik547/Student-expense-tracker"
   },
 
@@ -255,20 +314,28 @@ export const projectDetails: Record<string, ProjectDetail> = {
     id: "task-manager",
     title: "Task Manager",
     fullDescription:
-      "Task management is essential for personal productivity. This project implements a lightweight task management system that allows users to create, organize, and track tasks.",
+      "A professional productivity application for organizing workflows, managing deadlines, and tracking project progress.\n\n" +
+      "• Implemented state-persistent task management features including categorization, prioritization, and completion tracking.\n" +
+      "• Developed a minimal, high-efficiency interface focused on reducing cognitive load and improving user focus.\n" +
+      "• Engineered a modular JavaScript architecture to ensure maintainability and ease of feature expansion.\n" +
+      "• Built a responsive design ensuring productivity across mobile and desktop environments.",
     features: [
-      "Task creation and tracking",
-      "Task completion management",
-      "Simple task workflow"
+      "Comprehensive task lifecycle management (To-Do to Completed)",
+      "Persistent state management for ongoing project tracking",
+      "Minimalist interface optimized for productivity and focus",
+      "Modular code structure for easy feature scalability"
     ],
     challenges: [
-      "Designing minimal yet functional interface",
-      "Maintaining task state persistence"
+      "Creating an intuitive drag-and-drop workflow (optional but considered)",
+      "Balancing interface simplicity with feature depth",
+      "Ensuring consistent performance and state reliability"
     ],
     results: [
-      "Developed simple productivity task management system"
+      "Deployed a functional productivity tool for daily use",
+      "Established a clean, modular foundation for future expansion",
+      "Improved personal workflow efficiency through structured task tracking"
     ],
-    technologies: ["JavaScript", "HTML", "CSS"],
+    technologies: ["JavaScript (ES6+)", "HTML5", "CSS3", "LocalStorage"],
     githubUrl: "https://github.com/SaiKarthik547/task-manager"
   },
 
@@ -276,20 +343,28 @@ export const projectDetails: Record<string, ProjectDetail> = {
     id: "fiery-flappy-bird",
     title: "Fiery Flappy Bird",
     fullDescription:
-      "Fiery Flappy Bird is a browser based game inspired by the classic Flappy Bird gameplay. The player controls a character navigating through obstacles while maintaining flight and avoiding collisions.",
+      "A high-performance physics-based browser game utilizing HTML5 Canvas for smooth animations and responsive gameplay.\n\n" +
+      "• Engineered custom game physics including gravity, velocity, and collision detection for a seamless player experience.\n" +
+      "• Implemented dynamic obstacle generation algorithms and a persistent high-score tracking system.\n" +
+      "• Optimized asset loading and game loop execution to ensure consistent 60FPS performance.\n" +
+      "• Designed a responsive control system compatible with both keyboard and touch inputs.",
     features: [
-      "Player controlled movement system",
-      "Obstacle generation mechanics",
-      "Score tracking system"
+      "Physics-driven movement and collision detection systems",
+      "Dynamic obstacle generation for infinite gameplay",
+      "Real-time score tracking and persistent high-score records",
+      "High-performance HTML5 Canvas rendering engine"
     ],
     challenges: [
-      "Implementing smooth game physics",
-      "Designing responsive controls"
+      "Achieving consistent frame rates across different hardware",
+      "Balancing game difficulty through obstacle generation math",
+      "Implementing responsive touch and keyboard input handling"
     ],
     results: [
-      "Developed fully playable browser based game"
+      "Developed a fully playable and engaging browser-based game",
+      "Demonstrated proficiency in Canvas-based game development",
+      "Optimized game logic for smooth, cross-device performance"
     ],
-    technologies: ["JavaScript", "HTML", "CSS"],
+    technologies: ["JavaScript", "HTML5 Canvas", "CSS3"],
     githubUrl: "https://github.com/SaiKarthik547/Fiery-Flappy-Bird"
   }
 };
