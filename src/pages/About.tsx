@@ -70,7 +70,7 @@ const About: React.FC = () => {
                 
                 <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
                   <p>
-                    I am an <span className="text-primary-400 font-semibold">AI Systems Engineer</span> and Full-Stack Developer currently at VIT Chennai. My work focuses on the intersection of intelligent systems and scalable software architecture.
+                    I am an <span className="text-primary-400 font-semibold">AI Systems Engineer</span> and Full-Stack Developer graduated from VIT Chennai. My work focuses on the intersection of intelligent systems and scalable software architecture.
                   </p>
                   <p>
                     From developing <span className="text-secondary-400 font-semibold">Medical AI platforms</span> for brain disease analysis to building <span className="text-emerald-400 font-semibold">Multi-Agent workflows</span>, I thrive on solving complex problems that have real-world impact.
@@ -112,14 +112,14 @@ const About: React.FC = () => {
                   {education.map((edu, index) => (
                     <div key={index} className="relative pl-10">
                       <div className={`absolute left-0 top-1 w-6 h-6 rounded-full border-2 ${
-                        edu.status === 'current' ? 'bg-primary-500 border-primary-400' : 'bg-dark-300 border-gray-600'
+                        index === 0 ? 'bg-primary-500 border-primary-400' : 'bg-dark-300 border-gray-600'
                       } z-10`} />
                       
                       <div className="space-y-2">
                         <span className={`text-xs font-bold uppercase tracking-widest ${
-                          edu.status === 'current' ? 'text-primary-400' : 'text-gray-500'
+                          index === 0 ? 'text-primary-400' : 'text-gray-500'
                         }`}>
-                          {edu.year} {edu.status === 'current' && '• Current'}
+                          {edu.year}
                         </span>
                         <h3 className="text-xl font-bold text-white leading-tight">{edu.degree}</h3>
                         <div className="flex items-center text-gray-400 text-sm">
