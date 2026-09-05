@@ -42,7 +42,7 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "Demonstrated AI's potential in accelerating neurological diagnostic processes"
     ],
     technologies: ["Python", "PyTorch", "NumPy", "NiBabel", "OpenCV", "Matplotlib", "Scikit-image"],
-    githubUrl: "https://github.com/SaiKarthik547/Capstone"
+    githubUrl: "https://github.com/SaiKarthik547/NeuroX"
   },
 
   "medical-consultation-system": {
@@ -71,7 +71,7 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "Verified system security and role-based data isolation"
     ],
     technologies: ["Next.js 14", "TypeScript", "Tailwind CSS", "Prisma", "SQLite", "Lucide React", "Shadcn UI"],
-    githubUrl: "https://github.com/SaiKarthik547/Medical-Consultation-SYstem"
+    githubUrl: "https://github.com/SaiKarthik547/Medi-Consult-Prototype-Only"
   },
 
   "eco-forge": {

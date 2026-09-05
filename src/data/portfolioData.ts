@@ -188,7 +188,7 @@ export const portfolioData = {
       title: "Capstone – Medical AI Brain Analysis System",
       description: "High-precision deep learning framework for automated detection and segmentation of brain abnormalities from MRI scans.",
       technologies: ["Python", "PyTorch", "NiBabel", "OpenCV"],
-      githubUrl: "https://github.com/SaiKarthik547/Capstone",
+      githubUrl: "https://github.com/SaiKarthik547/NeuroX",
       status: "featured",
     },
     {
@@ -196,7 +196,7 @@ export const portfolioData = {
       title: "Medical Consultation System",
       description: "Sophisticated full-stack healthcare platform with secure consultation workflows and role-based access control.",
       technologies: ["Next.js", "TypeScript", "Prisma", "SQLite"],
-      githubUrl: "https://github.com/SaiKarthik547/Medical-Consultation-SYstem",
+      githubUrl: "https://github.com/SaiKarthik547/Medi-Consult-Prototype-Only",
       status: "featured",
     },
     {
